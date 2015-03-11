@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FRVideo.h"
+
+typedef void(^FRYouKuUtilsRequestCompletion)(NSError *error, NSArray *objs);
 
 @interface FRYouKuUtils : NSObject
 
@@ -16,7 +19,6 @@
  *  @param clientID 注册开放平台，创建的App客户端ID
  */
 + (void)startWithClientID:(NSString *)clientID;
-
 
 /**
  *  通过标签来搜索视频
@@ -30,7 +32,7 @@
  *
  *  @return 包含视频对象（FRVideo）的数组
  */
-+ (NSArray *)searchVideoWithTag:(NSString *)videoTag category:(NSString *)category period:(NSString *)period orderby:(NSString *)orderby page:(NSInteger)page pageCount:(NSInteger)pageCount;
++ (void)searchVideoWithTag:(NSString *)videoTag category:(NSString *)category period:(NSString *)period orderby:(NSString *)orderby page:(long)page pageCount:(long)pageCount completion:(FRYouKuUtilsRequestCompletion)completion;
 
 /**
  *  获取用户上传的视频
@@ -43,6 +45,6 @@
  *
  *  @return 包含视频对象（FRVideo）的数组
  */
-+ (NSArray *)getVideosWithUserID:(NSString *)userID userName:(NSString *)userName orderby:(NSString *)orderby page:(NSInteger)page pageCount:(NSInteger)pageCount;
++ (void)getVideosWithUserID:(NSString *)userID userName:(NSString *)userName orderby:(NSString *)orderby page:(long)page pageCount:(long)pageCount completion:(FRYouKuUtilsRequestCompletion)completion;
 
 @end

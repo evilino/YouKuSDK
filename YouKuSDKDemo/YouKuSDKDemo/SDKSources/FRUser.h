@@ -10,4 +10,8 @@
 
 @interface FRUser : NSObject
 
+@property (nonatomic, copy) NSString *identity;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *link;
+
 @end

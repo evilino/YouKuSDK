@@ -10,4 +10,11 @@
 
 @implementation FRUser
 
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+             @"identity" : @"id",
+             };
+}
+
 @end

@@ -10,4 +10,18 @@
 
 @implementation FRVideo
 
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+             @"identity" : @"id"
+             };
+}
+
++ (NSDictionary *)objectClassInArray
+{
+    return @{
+             @"user" : [FRUser class]
+             };
+}
+
 @end
