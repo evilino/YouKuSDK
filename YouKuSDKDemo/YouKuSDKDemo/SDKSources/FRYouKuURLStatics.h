@@ -19,6 +19,8 @@
 
 #define FRSearchWithTagURL [NSString stringWithFormat:@"%@searches/video/by_tag.json?", FRYouKuHOST]
 
+#define FRVideoWithUserURL [NSString stringWithFormat:@"%@videos/by_user.json?", FRYouKuHOST]
+
 #pragma mark -
 #pragma mark - 用户
 

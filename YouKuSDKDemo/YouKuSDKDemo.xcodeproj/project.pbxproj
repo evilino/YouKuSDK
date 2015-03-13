@@ -31,21 +31,10 @@
 		13635E101AAE8356009B3427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13635E0E1AAE8356009B3427 /* Main.storyboard */; };
 		13635E121AAE8356009B3427 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13635E111AAE8356009B3427 /* Images.xcassets */; };
 		13635E151AAE8356009B3427 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13635E131AAE8356009B3427 /* LaunchScreen.xib */; };
-		13635E211AAE8356009B3427 /* YouKuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13635E201AAE8356009B3427 /* YouKuSDKDemoTests.m */; };
 		13635E2D1AAE8592009B3427 /* FRYouKuUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 13635E2C1AAE8592009B3427 /* FRYouKuUtils.m */; };
 		13635E301AAE866D009B3427 /* FRVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13635E2F1AAE866D009B3427 /* FRVideo.m */; };
 		13635E331AAE8D96009B3427 /* FRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 13635E321AAE8D96009B3427 /* FRUser.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		13635E1B1AAE8356009B3427 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13635DF91AAE8356009B3427 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13635E001AAE8356009B3427;
-			remoteInfo = YouKuSDKDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		131475EB1AB02A8C008B3645 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -96,7 +85,6 @@
 		13635E0F1AAE8356009B3427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13635E111AAE8356009B3427 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13635E141AAE8356009B3427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13635E1A1AAE8356009B3427 /* YouKuSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouKuSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13635E1F1AAE8356009B3427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13635E201AAE8356009B3427 /* YouKuSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouKuSDKDemoTests.m; sourceTree = "<group>"; };
 		13635E2B1AAE8592009B3427 /* FRYouKuUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRYouKuUtils.h; sourceTree = "<group>"; };
@@ -114,13 +102,6 @@
 			files = (
 				1314760A1AB02AD4008B3645 /* MobileCoreServices.framework in Frameworks */,
 				131476081AB02ACD008B3645 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13635E171AAE8356009B3427 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				13635E011AAE8356009B3427 /* YouKuSDKDemo.app */,
-				13635E1A1AAE8356009B3427 /* YouKuSDKDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,24 +270,6 @@
 			productReference = 13635E011AAE8356009B3427 /* YouKuSDKDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		13635E191AAE8356009B3427 /* YouKuSDKDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13635E271AAE8356009B3427 /* Build configuration list for PBXNativeTarget "YouKuSDKDemoTests" */;
-			buildPhases = (
-				13635E161AAE8356009B3427 /* Sources */,
-				13635E171AAE8356009B3427 /* Frameworks */,
-				13635E181AAE8356009B3427 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				13635E1C1AAE8356009B3427 /* PBXTargetDependency */,
-			);
-			name = YouKuSDKDemoTests;
-			productName = YouKuSDKDemoTests;
-			productReference = 13635E1A1AAE8356009B3427 /* YouKuSDKDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -320,10 +282,6 @@
 				TargetAttributes = {
 					13635E001AAE8356009B3427 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					13635E191AAE8356009B3427 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 13635E001AAE8356009B3427;
 					};
 				};
 			};
@@ -341,7 +299,6 @@
 			projectRoot = "";
 			targets = (
 				13635E001AAE8356009B3427 /* YouKuSDKDemo */,
-				13635E191AAE8356009B3427 /* YouKuSDKDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,13 +311,6 @@
 				13635E101AAE8356009B3427 /* Main.storyboard in Resources */,
 				13635E151AAE8356009B3427 /* LaunchScreen.xib in Resources */,
 				13635E121AAE8356009B3427 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13635E181AAE8356009B3427 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,23 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13635E161AAE8356009B3427 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13635E211AAE8356009B3427 /* YouKuSDKDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		13635E1C1AAE8356009B3427 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13635E001AAE8356009B3427 /* YouKuSDKDemo */;
-			targetProxy = 13635E1B1AAE8356009B3427 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13635E0E1AAE8356009B3427 /* Main.storyboard */ = {
@@ -451,6 +385,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -472,6 +407,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,6 +430,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -508,6 +445,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -538,40 +476,6 @@
 			};
 			name = Release;
 		};
-		13635E281AAE8356009B3427 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = YouKuSDKDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouKuSDKDemo.app/YouKuSDKDemo";
-			};
-			name = Debug;
-		};
-		13635E291AAE8356009B3427 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = YouKuSDKDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouKuSDKDemo.app/YouKuSDKDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,15 +493,6 @@
 			buildConfigurations = (
 				13635E251AAE8356009B3427 /* Debug */,
 				13635E261AAE8356009B3427 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		13635E271AAE8356009B3427 /* Build configuration list for PBXNativeTarget "YouKuSDKDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				13635E281AAE8356009B3427 /* Debug */,
-				13635E291AAE8356009B3427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

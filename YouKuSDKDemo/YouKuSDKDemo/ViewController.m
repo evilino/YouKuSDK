@@ -16,18 +16,28 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+                        [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [FRYouKuUtils startWithClientID:@"0f9a62047cc27e82"];
     
-    [FRYouKuUtils searchVideoWithTag:@"大波" category:nil period:nil orderby:nil page:1 pageCount:1 completion:^(NSError *error, NSArray *objs) {
-        
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)test:(id)sender {
+    
+//    [FRYouKuUtils searchVideoWithTag:@"大波" category:nil period:nil orderby:nil page:1 pageCount:1 completion:^(BOOL hasNextPage, NSError *error, NSArray *objs) {
+//        
+//    }];
+    
+    [FRYouKuUtils getVideosWithUserID:@"23444541" userName:nil orderby:nil page:1 pageCount:10 completion:^(BOOL hasNextPage, NSError *error, NSArray *objs) {
+        
+    }];
+    
+}
+
 
 @end

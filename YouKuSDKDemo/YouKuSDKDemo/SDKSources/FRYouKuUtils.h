@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FRVideo.h"
 
-typedef void(^FRYouKuUtilsRequestCompletion)(NSError *error, NSArray *objs);
+typedef void(^FRYouKuUtilsRequestCompletion)(BOOL hasNextPage, NSError *error, NSArray *objs);
 
 @interface FRYouKuUtils : NSObject
 
